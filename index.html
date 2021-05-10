@@ -80,7 +80,7 @@ text-decoration: none;
     // Smart Contract stuff
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
-    const daiAddress = "0x75b8aE02C49fAd790F40173728F571DA77A0758c";
+    const daiAddress = "0x53e26509f5f2320cd1c71e6379463f5589e7873a";
     const daiContract = new ethers.Contract(daiAddress, abi, provider);
     refreshMessageButton.addEventListener('click', () => {
         getMessage();
